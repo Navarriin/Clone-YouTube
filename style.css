@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.caixa-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #0f0f0f;
+  font-weight: 700;
+}
+
+.img-thumb {
+  width: 362px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.img-logo {
+  width: 36px;
+  border-radius: 50%;
+}
+
+.nome-canal {
+  font-size: 14px;
+  color: #606060;
+  font-weight: 400;
+}
+
+.caixa-infos {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
