@@ -20,9 +20,8 @@ body {
 }
 
 .img-thumb {
-  width: 362px;
+  width: 100%;
   border-radius: 12px;
-  margin-bottom: 10px;
 }
 
 .img-logo {
@@ -45,11 +44,11 @@ body {
 .caixa-videos {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
+  gap: 20px;
 }
 
 .caixa-video {
-  width: 380px;
+  width: 32%;
 }
 
 .caixa-textos a {
@@ -75,6 +74,7 @@ body {
 }
 
 .categorias {
+  margin-top: 15px;
   display: flex;
   gap: 8px;
 }
@@ -88,6 +88,11 @@ body {
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.categoria:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .categoria.selecionado {
@@ -130,11 +135,16 @@ body {
   gap: 20px;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .bloco-item.selecionado {
   background-color: #0000000d;
   font-weight: 700;
+}
+
+.bloco-item:hover {
+  background-color: #0000000d;
 }
 
 .menu-login {
@@ -157,4 +167,78 @@ body {
   border-radius: 30px;
   color: #065fd4;
   fill: #065fd4;
+  transition: all 0.2s ease;
+}
+
+.login-bloco:hover {
+  background-color: #def1ff;
+  border-color: #def1ff;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.caixa-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icone-risco {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border-radius: 100%;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.icone-risco:hover {
+  background-color: #0000000d;
+}
+
+.icone-logo {
+  width: 90;
+  height: 20px;
+}
+
+.pesquisa {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 0 4px 0 16px;
+  margin: 0 0 0 32px;
+  width: 640px;
+  height: 40px;
+}
+
+.svg-micro {
+  width: 40px;
+  height: 40px;
+  background-color: #0000000d;
+  border-radius: 100%;
+  padding: 6px;
+  margin-left: 15px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.svg-micro:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.caixa-pesquisa {
+  display: flex;
+  margin: 8px 0 20px 32px;
+}
+
+.caixa-login {
+  gap: 15px;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  height: 40px;
 }
